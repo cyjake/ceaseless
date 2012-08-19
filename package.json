@@ -1,0 +1,15 @@
+{
+  "author": "Jake Chen <jakeplus@gmail.com> (http://cyj.me)",
+  "name": "ceaseless",
+  "description": "Enhanced Less Compiler",
+  "version": "0.0.1",
+  "main": "./lib/ceaseless",
+  "bin": "./bin/ceaseless",
+  "directories": {"bin": "./bin"},
+  "dependencies": {"less": ">=1.3.0"},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
