@@ -18,8 +18,8 @@ But I'd prefer:
 $ lessc foo.less                    # generate foo.css respectively
 ```
 
-Besides, Less.js doesnot support fancy features like live compiling,
-Which I enjoyed alot whilst usign the sass gem from the Ruby land.
+Besides, Less.js does not support fancy features like live compiling,
+Which I enjoyed alot whilst using the sass gem from the Ruby land.
 
 So here's this npm module.
 
@@ -38,7 +38,7 @@ $ ceaseless assets/css/             # compile all *.less files under some dir
 
 Go live
 
-```base
+```bash
 $ ceaseless --watch assets/css/     # watch for file modifications, creations or deletions
 ```
 
