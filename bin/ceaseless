@@ -3,10 +3,14 @@
 // Usage: ./ceaseless.js --watch assets/less
 // if --watch folder is not provided, current working directory will be used.
 
-var ceaseless = require("../lib/ceaseless");
+var ceaseless = require('../lib/ceaseless'),
+    argv = require('optimist').argv,
+    files = argv._
 
-var args = process.argv.slice(0);
-// shift off node and script name
-args.shift(); args.shift();
-
-ceaseless.run(args);
+if (files && files.length > 0) {
+    ceaseless.compile(files)
+}
+if (argv.watch) {
+    ceaseless.addPath(argv.watch)
+    ceaseless.watch(argv.watch)
+}

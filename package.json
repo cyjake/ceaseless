@@ -6,10 +6,14 @@
   "main": "./lib/ceaseless",
   "bin": "./bin/ceaseless",
   "directories": {"bin": "./bin"},
-  "dependencies": {"less": ">=1.3.0"},
+  "dependencies": {
+    "less": ">=1.3.0",
+    "optimist": ">=0.3.4",
+    "watch-tree-maintained": ">=0.1.2"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">=0.6"
   }
 }
