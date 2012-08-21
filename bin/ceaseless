@@ -10,17 +10,20 @@ optimist.usage('Usage: $0 [dir|files] --watch [dir|file]')
         .alias('w', 'watch')
         .describe('w', 'folder or file to watch')
 
-var argv = optimist.argv,
-    files = argv._
+main(optimist.argv)
 
-if (files && files.length > 0) {
-    ceaseless.compile(files)
-}
-if (argv.watch) {
-    ceaseless.watch(argv.watch)
-}
+function main(argv) {
+    var files = argv._
 
-// no options provided
-if (process.argv.length === 2) {
-    optimist.showHelp()
+    if (files && files.length > 0) {
+        ceaseless.compile(files)
+    }
+    if (argv.watch) {
+        ceaseless.watch(argv.watch)
+    }
+
+    // no options provided
+    if (process.argv.length === 2) {
+        optimist.showHelp()
+    }
 }
