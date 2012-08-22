@@ -25,7 +25,7 @@ So here's this npm module.
 
 ### Install
 
-Just `$ npm install ceaseless`, you are good to go.
+Just `$ npm install -g ceaseless`, you are good to go.
 
 ### Usage
 
